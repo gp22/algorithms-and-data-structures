@@ -11,6 +11,9 @@ insert: insert.c
 delete: delete.c
 	clang -ggdb3 -O0 -std=c11 -Wall -Werror -o delete delete.c
 
+reverseIterative: reverseIterative.c
+	clang -ggdb3 -O0 -std=c11 -Wall -Werror -o reverseIterative reverseIterative.c
+
 clean:
-	rm -f *.o a.out core insertAtBeginning insert delete log.txt
+	rm -f *.o a.out core insertAtBeginning insert delete reverseIterative log.txt
 	rm -rf *.dSYM
