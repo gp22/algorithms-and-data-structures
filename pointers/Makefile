@@ -4,7 +4,9 @@
 #
 
 pointers: pointers.c
-	clang -ggdb3 -O0 -std=c11 -Wall -Werror -o pointers pointers.c -lm
+	clang -ggdb3 -O0 -std=c11 -o pointers pointers.c -lm
+# pointers: pointers.c
+# 	clang -ggdb3 -O0 -std=c11 -Wall -Werror -o pointers pointers.c -lm
 
 clean:
 	rm -f *.o a.out core pointers log.txt
