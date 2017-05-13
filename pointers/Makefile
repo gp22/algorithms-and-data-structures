@@ -11,6 +11,12 @@ pointers: pointers.c
 callByReference: callByReference.c
 	clang -ggdb3 -O0 -std=c11 -Wall -Werror -o callByReference callByReference.c -lm
 
+pointersAndArrays: pointersAndArrays.c
+	clang -ggdb3 -O0 -std=c11 -Wall -Werror -o pointersAndArrays pointersAndArrays.c -lm
+
+arraysAsArguments: arraysAsArguments.c
+	clang -ggdb3 -O0 -std=c11 -o arraysAsArguments arraysAsArguments.c -lm
+
 clean:
-	rm -f *.o a.out core pointers callByReference log.txt
+	rm -f *.o a.out core pointers callByReference pointersAndArrays arraysAsArguments log.txt
 	rm -rf *.dSYM
